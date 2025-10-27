@@ -1,0 +1,7 @@
+def multiply(a, b):
+    """Multiplication function"""
+    return a * b
+
+def main():
+    print("Simple Calculator")
+    print("Current functions: add, subtract, multiply") 
