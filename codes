@@ -1,0 +1,19 @@
+def get_user_input():
+    """Get numbers and operation from user"""
+    try:
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        operation = input("Enter operation (add, subtract): ").lower()
+        return num1, num2, operation
+    except ValueError:
+        print("Please enter valid numbers!")
+        return None, None, None
+
+def calculate_result(num1, num2, operation):
+    """Perform calculation based on operation"""
+    if operation == "add":
+        return add(num1, num2)
+    elif operation == "subtract":
+        return subtract(num1, num2)
+    else:
+        return "Unknown operation"
