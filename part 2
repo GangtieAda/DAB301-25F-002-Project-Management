@@ -5,7 +5,7 @@ def divide(a, b):
         return "Error: Division by zero"
     return a / b
 
-# 在 main() 函数中更新显示：
+
 def main():
     print("Simple Calculator")
-    print("Current functions: add, subtract, divide")  # 添加 divide
+    print("Current functions: add, subtract, divide") 
